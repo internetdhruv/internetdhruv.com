@@ -1,12 +1,20 @@
 ---
 import Head from '@components/Head.astro';
+import Navbar from '@components/layout/Navbar.astro';
 
 const { title } = Astro.props;
 ---
 
 <html lang="en">
   <Head title={title} />
-  <body class="dark">
-    <slot />
+  <body class="bg-gray">
+    <div
+      class="flex h-screen flex-col justify-stretch sm:flex-row sm:justify-items-end"
+    >
+      <Navbar />
+      <main class="flex-grow">
+        <slot />
+      </main>
+    </div>
   </body>
 </html>
