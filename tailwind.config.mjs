@@ -10,6 +10,9 @@ export default {
       red: 'e05263',
       silver: 'cccccc',
     },
+    fontFamily: {
+      sans: ['IBM Plex Mono', 'monospace']
+    }
   },
   plugins: [],
 };
