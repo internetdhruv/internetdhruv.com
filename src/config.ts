@@ -6,11 +6,11 @@ const config: SiteConfig = {
   description: 'My personal website and blog',
   pages: [
     {
-      title: '/home',
+      title: 'home',
       path: '/',
     },
     {
-      title: '/blog',
+      title: 'blog',
       path: '/blog',
     },
   ],

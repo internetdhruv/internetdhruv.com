@@ -1,0 +1,14 @@
+---
+import { formatDate } from '@utils';
+const { post } = Astro.props;
+---
+
+<div class="my-5">
+  <div class="flex flex-row space-x-10">
+    <p class="w-28">{formatDate(post.data.publishDate)}</p>
+    <a href={`/blog/${post.slug}`} class="text-mint hover:text-pink">{post.data.title}</a>
+  </div>
+  <div>
+    <p>{post.data.description}</p>
+  </div>
+</div>

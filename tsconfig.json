@@ -7,7 +7,8 @@
       "@site-config": ["src/config.ts"],
       "@site-types": ["src/types.ts"],
       "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"]
+      "@layouts/*": ["src/layouts/*"],
+      "@utils": ["src/utils"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.astro"]

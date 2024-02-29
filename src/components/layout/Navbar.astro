@@ -6,9 +6,11 @@ const url = new URL(Astro.request.url);
 
 <header
   id="main-header"
-  class="group flex w-full items-center justify-between p-3 sm:w-56 sm:items-start"
+  class="group flex w-full items-center justify-between p-3 sm:ml-3 sm:w-36 sm:items-start"
 >
   <div>
+    {
+      /*
     <a
       aria-current={url.pathname === '/' ? 'page' : false}
       href="/"
@@ -16,15 +18,17 @@ const url = new URL(Astro.request.url);
     >
       Dhruv Sharma
     </a>
+    */
+    }
     <nav
-      class="bg-bgColor/[.85] absolute top-14 hidden w-screen flex-col items-end gap-y-4 py-4 shadow backdrop-blur group-[.site-menu-open]:z-50 group-[.site-menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:flex sm:w-full sm:flex-col sm:items-start sm:rounded-none sm:shadow-none sm:backdrop-blur-none"
+      class="bg-bgColor/[.95] absolute left-0 top-14 hidden w-full flex-col items-end gap-y-4 py-4 shadow backdrop-blur group-[.site-menu-open]:z-50 group-[.site-menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:flex sm:w-full sm:flex-col sm:items-start sm:rounded-none sm:shadow-none sm:backdrop-blur-none"
     >
       {
         config.pages.map((page: Page) => (
           <a
             aria-current={url.pathname === page.path ? 'page' : false}
             href={page.path}
-            class="hover:text-pink mr-10 text-xl hover:underline hover:decoration-mint"
+            class="mr-10 text-xl text-mint hover:text-pink hover:decoration-mint"
           >
             {page.title}
           </a>
